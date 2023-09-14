@@ -1,0 +1,57 @@
+.form-category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+
+    & .form-modal {
+        width: 80%;
+        background-color: rgb(243, 241, 241);
+        border: black 1px solid;
+        border-radius: 15px;
+
+        & h3 {
+            font-family: monospace;
+            text-align: center;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        & form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & label {
+                width: 70%;
+                font-family: monospace;
+                font-size: 17px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            & input {
+                width: 70%;
+                border: none;
+                height: 20px;
+                border-radius: 10px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            & button {
+                width: 70%;
+                border: none;
+                background-color: rgb(106, 106, 206);
+                font-family: monospace;
+                color: white;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+}

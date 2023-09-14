@@ -1,30 +1,105 @@
 .header-mobile {
     width: 100%;
-    height: 40px;
+    height: 55px;
     background-color: black;
+    align-items: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     & .box-left {
         display: flex;
+        justify-content: flex-start;
+        width: 33%;
         margin-left: 10px;
-        width: ;
+
+        & .title {
+            color: white;
+            margin: 0;
+            font-size: 16px;
+            line-height: 41px;
+        }
+        & .image {
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+        & a {
+            text-decoration: none;
+        }
     }
 
-    & .title {
-        color: white;
-        margin: 0;
-        font-size: 16px;
-        line-height: 41px;
-    }
-    & .image {
-        width: 30px;
-        height: 30px;
-        margin-top: 5px;
+    & .box-mid {
+        display: flex;
+        width: 33%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        & .title{
+            color: white;
+        }
+
+        & .menubar {
+            width: 30px;
+            height: 30px;
+        }
+
+        & .close {
+            background-color: black;
+            position: absolute;
+            top: 43px;
+
+            & ul {
+                width: 200px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & li {
+                    color: white;
+                    padding: 7px;
+                }
+            }
+        }
     }
 
-    & .menubar {
-        width: 30px;
-        height: 30px;
-    }
+    & .box-right {
+        display: flex;
+        align-items: center;
+        width: 33%;
+        justify-content: flex-end;
+
+        & .title {
+            color: white;
+            margin: 0;
+            font-size: 14px;
+            line-height: 41px;
+            margin-right: 15px;
+        }
+        & a {
+            text-decoration: none;
+        }
+
+        & .box-image {
+            height: 30px;
+            width: 25px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            margin-right: 5px;
+
+            & .image{
+                width: 40px;
+                height: 30px;
+            }
+        }
+        }
+    
 }
