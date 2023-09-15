@@ -1,0 +1,49 @@
+.category-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    & a {
+        width: 35%;
+        margin-left: 3%;
+        margin-right: 3%;
+      
+
+        & div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            & img {
+                width: 100%;
+            }
+
+            & div {
+                width: 100%;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+
+                & p {
+                    font-size: 13px;
+                    font-family: monospace;
+                    color: black;
+                }
+            }
+
+        }
+    }
+
+}
+
+.box-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

@@ -48,6 +48,7 @@
             background-color: black;
             position: absolute;
             top: 43px;
+            z-index: 1;
 
             & ul {
                 width: 200px;
