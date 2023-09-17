@@ -1,57 +1,52 @@
-.form-category {
+.box-create-size {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15px;
 
-    & .form-modal {
-        width: 80%;
-        background-color: rgb(243, 241, 241);
-        border: black 1px solid;
-        border-radius: 15px;
-
-        & h3 {
-            font-family: monospace;
-            text-align: center;
-            margin: 0;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        & form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            & label {
-                width: 70%;
-                font-family: monospace;
-                font-size: 17px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-
-            & input {
-                width: 70%;
-                border: none;
-                height: 20px;
-                border-radius: 10px;
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-
-            & button {
-                width: 70%;
-                border: none;
-                background-color: rgb(106, 106, 206);
-                font-family: monospace;
-                color: white;
-                margin-bottom: 15px;
-            }
-        }
+    & h3 {
+        font-family: monospace;
     }
 
+    & form {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70%;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        & label {
+            font-family: monospace;
+            width: 60%;
+            text-align: center;
+        }
+        & input {
+            width: 60%;
+            height: 15px;
+            padding: 0;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+        & select {
+            width: 61%;
+            height: 24px;
+            margin-top: 7px;
+            margin-bottom: 12px;
+        }
+        & button {
+            width: 61%;
+            height: 24px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(150, 150, 255);
+            color: white;
+        }
+    }
 }

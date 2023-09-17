@@ -1,0 +1,13 @@
+.box-success {
+    width: 150px;
+    height: 80px;
+    background-color: rgb(66, 165, 66);
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 100px;
+
+    & h1 {
+        color: white;
+    }
+}
