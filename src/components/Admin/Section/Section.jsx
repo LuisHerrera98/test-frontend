@@ -6,7 +6,7 @@ const Section = () => {
         <div className="section-admin">
           <div className="box-category">
             <h3>Categorias</h3>
-            <a href="">
+            <a href="admin/categoria/crear">
               <button>Crear categoria</button>
             </a>
             <br />

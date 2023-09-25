@@ -4,6 +4,7 @@ import "./categoryForm.css";
 
 const CategoryForm = () => {
   const [name, setName] = useState("");
+  const [showAlert, setSetshowAlert] = useState(false)
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -11,6 +12,7 @@ const CategoryForm = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    console.log("hola");
 
     const data = {
       name,
@@ -26,7 +28,8 @@ const CategoryForm = () => {
     })
       .then((response) => {
         if (response.ok) {
-          console.log("Solicitud POST exitosa");
+          console.log("create success")
+          // setSetshowAlert(true)
         } else {
           console.error("Error en la solicitud POST");
         }
@@ -38,7 +41,11 @@ const CategoryForm = () => {
 
   return (
     <div className="box-create-size">
-      <Sucess type="Categoria"/>
+      {
+        showAlert ? (
+          <Sucess type="Categoria"/>
+        ) : (null)
+      }
       <h3>Crear Categoria</h3>
 
       <form onSubmit={handleFormSubmit}>
@@ -49,6 +56,7 @@ const CategoryForm = () => {
           placeholder="nombre.."
           value={name}
           onChange={handleNameChange}
+          autoComplete="off"
         />
         <button type="submit">Crear</button>
       </form>
